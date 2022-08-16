@@ -1,0 +1,144 @@
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.body_child {
+    color: white;
+    margin: auto;
+    font-size: 35px;
+}
+
+.test {
+    animation: fadeIn 2s forwards;
+    margin: 20px 70px;
+}
+
+.test p {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+.span a {
+    color: rgb(169, 169, 169);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.span a:hover {
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.emoji3 {
+    opacity: 0;
+    position: absolute;
+    transform: translateX(30%);
+    transition: all 0.3s ease-in-out;
+}
+
+.w3 {
+    color: rgb(169, 169, 169);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.w3:hover+.emoji3 {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0.3s ease-in-out;
+}
+
+.skills {
+    display: flex;
+    margin: 50px 0px;
+}
+
+.skillsChild {
+    /* background-color: rgb(51, 51, 51); */
+    margin: auto;
+    height: 50vh;
+    width: 40vw;
+    display: flex;
+    transform: rotate(180deg);
+}
+
+.skillsBar {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.skillsBar div {
+    margin-right: 15px;
+    background-color: rgb(58, 58, 58);
+    /* background-image: radial-gradient(black, white, gray); */
+    width: 10%;
+    writing-mode: vertical-rl;
+    color: white;
+    font-size: 23px;
+    padding: 20px 5px;
+    font-weight: 400;
+}
+
+.skillsBar div:nth-child(6){
+    height: 75%;
+}
+.skillsBar div:nth-child(7){
+    height: 90%;
+}
+.skillsBar div:nth-child(5){
+    height: 70%;
+}
+.skillsBar div:nth-child(4){
+    height: 70%;
+}
+.skillsBar div:nth-child(3){
+    height: 80%;
+}
+.skillsBar div:nth-child(2){
+    height: 60%;
+}
+.skillsBar div:nth-child(1){
+    height: 85%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@media only screen and (max-width: 912px) {
+    .test {
+        margin: 20px 40px;
+    }
+
+    .emoji3 {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .test {
+        margin: 20px 10px;
+    }
+
+    .body_child {
+        font-size: 23px;
+    }
+
+    .test p {
+        font-size: 19px;
+    }
+}

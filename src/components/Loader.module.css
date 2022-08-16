@@ -1,0 +1,12 @@
+.span2 {
+    display: fixed;
+    margin: auto;
+}
+
+.span {
+    background-color: rgb(15, 15, 15);
+    width: 100vw;
+    height: 90vh;
+    position: fixed;
+    display: flex;
+}
