@@ -127,6 +127,13 @@
         opacity: 1;
         transform: translateX(0%);
     }
+    .skillsChild{
+        width: 80vw;
+    }
+    .skillsBar div{
+        margin: 0px 5px;
+        padding:5px 0px;
+    }
 }
 
 @media only screen and (max-width: 540px) {
@@ -146,5 +153,7 @@
     }
     .skillsBar div{
         margin: 0px 5px;
+        padding:5px 0px;
+        font-size: 15px;
     }
 }
