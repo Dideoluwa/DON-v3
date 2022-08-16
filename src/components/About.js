@@ -31,7 +31,7 @@ function About() {
                     <div className={styles.skillsChild}>
                         <div className={styles.skillsBar}>
                             <div><p>Responsive Design</p>
-                            <p>100%</p></div>
+                        </div>
                             <div>Firebase</div>
                             <div>Git/GitHub</div>
                             <div>React.js</div>

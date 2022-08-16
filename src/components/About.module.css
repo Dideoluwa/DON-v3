@@ -141,4 +141,8 @@
     .test p {
         font-size: 19px;
     }
+    .skillsChild{
+        margin: 0;
+        width: 100vw;
+    }
 }
