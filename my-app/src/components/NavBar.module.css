@@ -1,0 +1,45 @@
+.logo {
+    cursor: pointer;
+}
+
+.logo svg{
+    margin-left: 12px;
+}
+
+.navChild {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+}
+
+.hamburger {
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    background-color: white;
+    height: 2px;
+    margin-top: 6px;
+    width: 35px;
+}
+
+.hamburger .hamburgerSecond {
+    width: 25px;
+    transition: all 0.2s ease-in-out;
+}
+
+.hamburger:hover div {
+    width: 35px;
+    transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 540px) {
+    .navChild{
+        margin: 0px 14px;
+    }
+    .logo svg{
+        width: 65px;
+    }
+}

@@ -1,0 +1,79 @@
+.cover {
+    width: 100vw;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(15, 15, 15, 0.999);
+    animation: navOpen 0.5s forwards;
+    color: white;
+    height: 100vh;
+    z-index: 100;
+}
+
+.close {
+    position: absolute;
+    top: 2%;
+    right: 0;
+    cursor: pointer;
+    margin-right: 12px;
+    justify-content: flex-start;
+}
+
+.close div {
+    background-color: white;
+    height: 4px;
+    margin-top: 2px;
+    width: 30px;
+}
+
+.list2 h2 a {
+    margin-top: 50px;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 60px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.list2 h2 a:hover {
+    transition: all 0.2s ease-in-out;
+    color: rgb(184, 184, 184);
+}
+
+.bar1 {
+    -webkit-transform: rotate(-135deg) translate(-8px, 7px);
+    transform: rotate(-45deg) translate(-10px, 6px);
+}
+
+.bar2 {
+    -webkit-transform: rotate(135deg) translate(3px, 3px);
+    transform: rotate(45deg) translate(3px, 5px);
+}
+
+@keyframes navOpen {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 912px) {
+    .list2 h2 a {
+        margin-top: 10px;
+        letter-spacing: 5px;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+}
