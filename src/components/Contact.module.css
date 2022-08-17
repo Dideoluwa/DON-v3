@@ -184,10 +184,12 @@
 
     .body_inner input {
         font-size: 15px;
+        border: 0.5px solid white;
     }
 
     .body_inner textarea {
         font-size: 15px;
+        border: 0.5px solid white;
     }
 
     .contactInfo_list svg {
@@ -215,17 +217,22 @@
     .body_inner {
         margin: auto;
         margin-top: 0px;
-        width: 95%;
+        width: 98%;
         flex-direction: column;
     }
 
     .contactInfo {
         width: 98%;
-        padding: 10px 10px;
+        padding: 5px 5px;
         margin: auto;
         margin-top: 30px;
     }
-
+    .checkoutBody_inner_name{
+        flex-direction: column;
+    }
+    .checkoutBody_inner_name_inner{
+        width: 100%;
+    }
     .form {
         width: 100%;
     }
@@ -236,18 +243,24 @@
 
     .body_inner input {
         font-size: 15px;
+        border: 0.5px solid white;
     }
 
     .body_inner textarea {
         font-size: 15px;
+        border: 0.5px solid white;
     }
 
     .contactInfo_list svg {
         width: 50%;
     }
 
-    .contactInfo_listName {
+    .contactInfo_list{
         width: 100%;
+    }
+
+    .contactInfo_listName {
+        width: 90%;
     }
 
     .contactInfo_list h4 {

@@ -53,7 +53,6 @@ function Contact() {
                     type='text'
                     value={firstName}
                     onChange={FirstNameChangeHandler}
-                    placeholder='John'
                   />
                 </div>
                 <div className={styles.checkoutBody_inner_name_inner}>
@@ -62,7 +61,6 @@ function Contact() {
                     type='email'
                     value={email}
                     onChange={EmailChangeHandler}
-                    placeholder='Johndoe@email.com'
                   />
                 </div>
               </div>
