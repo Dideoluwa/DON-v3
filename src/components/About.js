@@ -13,7 +13,7 @@ function About() {
                 <div className={styles.test}>
                     <p>
                         I am a young web developer based in Lagos, Nigeria. I am currently a student studying
-                        computer science at <span className={styles.span}><a href='https://unilag.edu.ng/' target='_blank' rel="noreferrer">The University of Lagos.</a></span>
+                        computer science at <span className={styles.span}><a href='https://unilag.edu.ng/' target='_blank' rel="noreferrer">The University of Lagos. </a></span>
                         I picked interest in coding at a very young and vital stage of my life, When I wrote
                         just HTML and CSS before moving unto Javascript in the later future. Coding isn't the
                         only thing i've always had a thing for. I picked interest in music also which helps
