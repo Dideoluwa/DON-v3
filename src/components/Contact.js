@@ -1,25 +1,48 @@
 import React, { useState, useEffect } from 'react'
 import NavBar from './NavBar'
 import styles from './Contact.module.css'
+import axios from 'axios'
 
 
 function Contact() {
   let [firstName, setFirstName] = useState('')
   let [formIsValid, setFormIsValid] = useState(false)
-  let [message, setMessage] = useState('')
+  let [messages, setMessages] = useState('')
+  // let [success, setSuccess] = useState(false)
   let [subject, setSubject] = useState('')
   let [email, setEmail] = useState('')
 
 
   useEffect(() => {
-    if (firstName.trim().length >= 1 && message.trim().length >= 1 && message.trim().length >= 1 && email.includes('@') && email.includes('.com')) {
+    if (firstName.trim().length >= 1 && messages.trim().length >= 1 && subject.trim().length >= 1 && email.includes('@') && email.includes('.com')) {
       setFormIsValid(true)
     } else {
       setFormIsValid(false)
     }
-  }, [firstName, message, subject, email])
-  let formSubmitHandler = (e) => {
-    // e.preventDefault()
+  }, [firstName, messages, subject, email])
+  let message = ''
+  let formSubmitHandler = async (e) => {
+    e.preventDefault();
+   let res = axios
+      .post("https://getform.io/f/8920f32d-51e2-48ea-8c49-e8038017df6b", {
+        name: firstName,
+        email: email,
+        subject: subject,
+        message: messages
+      })
+      .then(response => console.log(response))
+      .catch(error => console.log(error))
+    // setSuccess(true)
+    console.log(res)
+    if (res.Promise.PromiseState === "fulfilled") {
+      setFirstName('')
+      setEmail('')
+      setMessages('')
+      setSubject('')
+      message = <h3>Your message has been sent successfully.</h3>
+    } else {
+      message = <h3>An error occured, try again later.</h3>
+    }
   }
 
   let FirstNameChangeHandler = (e) => {
@@ -33,7 +56,7 @@ function Contact() {
     setSubject(e.target.value)
   }
   let messageChangeHandler = (e) => {
-    setMessage(e.target.value)
+    setMessages(e.target.value)
   }
   return (
     <div>
@@ -50,6 +73,7 @@ function Contact() {
                 <div className={styles.checkoutBody_inner_name_inner}>
                   <label>Name</label>
                   <input
+                    name="name"
                     type='text'
                     value={firstName}
                     onChange={FirstNameChangeHandler}
@@ -58,6 +82,7 @@ function Contact() {
                 <div className={styles.checkoutBody_inner_name_inner}>
                   <label>Email</label>
                   <input
+                    name="Email"
                     type='email'
                     value={email}
                     onChange={EmailChangeHandler}
@@ -67,6 +92,7 @@ function Contact() {
               <div>
                 <label>Subject</label>
                 <input
+                  name="Subject"
                   type='text'
                   value={subject}
                   onChange={subjectChangeHandler}
@@ -75,8 +101,9 @@ function Contact() {
               <div>
                 <label>Message</label>
                 <textarea
+                  name="message"
                   type='text'
-                  value={message}
+                  value={messages}
                   onChange={messageChangeHandler}
                 />
               </div>
@@ -85,13 +112,14 @@ function Contact() {
                 className={styles.button}
                 disabled={!formIsValid}>
                 Send message</button>
+              <h3>{message}</h3>
             </form>
           </div>
           <div className={styles.contactInfo}>
-            <h3>Contact Info</h3>
+            <h3>Info</h3>
             <div className={styles.contactInfo_list}>
-              <div> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill='white'><path d="M20 21.193l-.003.807h-19.993l-.004-.833c-.009-2.224.088-3.495 2.647-4.086 2.805-.647 5.573-1.227 4.242-3.682-3.943-7.275-1.123-11.399 3.111-11.399 4.153 0 7.043 3.971 3.11 11.398-1.292 2.44 1.375 3.02 4.242 3.682 2.57.594 2.657 1.873 2.648 4.113zm4-17.193h-7v2h7v-2zm0 4h-7v2h7v-2zm0 4h-7v2h7v-2z" /></svg>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill='white'><path d="M20 21.193l-.003.807h-19.993l-.004-.833c-.009-2.224.088-3.495 2.647-4.086 2.805-.647 5.573-1.227 4.242-3.682-3.943-7.275-1.123-11.399 3.111-11.399 4.153 0 7.043 3.971 3.11 11.398-1.292 2.44 1.375 3.02 4.242 3.682 2.57.594 2.657 1.873 2.648 4.113zm4-17.193h-7v2h7v-2zm0 4h-7v2h7v-2zm0 4h-7v2h7v-2z" /></svg>
               </div>
               <div className={styles.contactInfo_listName}>
                 <h4>Name:</h4>
