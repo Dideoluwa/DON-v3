@@ -155,6 +155,10 @@
     transition: all 0.2s ease-in-out;
 }
 
+.message{
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 912px) {
     .test {
         margin: 20px 40px;

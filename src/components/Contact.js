@@ -8,7 +8,7 @@ function Contact() {
   let [firstName, setFirstName] = useState('')
   let [formIsValid, setFormIsValid] = useState(false)
   let [messages, setMessages] = useState('')
-  // let [success, setSuccess] = useState(false)
+  let [success, setSuccess] = useState('')
   let [subject, setSubject] = useState('')
   let [email, setEmail] = useState('')
 
@@ -20,29 +20,27 @@ function Contact() {
       setFormIsValid(false)
     }
   }, [firstName, messages, subject, email])
-  let message = ''
   let formSubmitHandler = async (e) => {
     e.preventDefault();
-   let res = axios
+    axios
       .post("https://getform.io/f/8920f32d-51e2-48ea-8c49-e8038017df6b", {
         name: firstName,
         email: email,
         subject: subject,
         message: messages
       })
-      .then(response => console.log(response))
+      .then(function (response) {
+        if (response.status === 200) {
+          setFirstName('')
+          setEmail('')
+          setMessages('')
+          setSubject('')
+          setSuccess("Your message has been sent successfully.");
+        } else {
+          setSuccess("Some error occured, Try again later");
+        }
+      })
       .catch(error => console.log(error))
-    // setSuccess(true)
-    console.log(res)
-    if (res.Promise.PromiseState === "fulfilled") {
-      setFirstName('')
-      setEmail('')
-      setMessages('')
-      setSubject('')
-      message = <h3>Your message has been sent successfully.</h3>
-    } else {
-      message = <h3>An error occured, try again later.</h3>
-    }
   }
 
   let FirstNameChangeHandler = (e) => {
@@ -112,7 +110,7 @@ function Contact() {
                 className={styles.button}
                 disabled={!formIsValid}>
                 Send message</button>
-              <h3>{message}</h3>
+              <div className={styles.message}>{success ? <h3>{success}</h3> : null}</div>
             </form>
           </div>
           <div className={styles.contactInfo}>
