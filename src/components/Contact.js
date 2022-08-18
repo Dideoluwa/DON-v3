@@ -9,6 +9,7 @@ function Contact() {
   let [formIsValid, setFormIsValid] = useState(false)
   let [messages, setMessages] = useState('')
   let [success, setSuccess] = useState('')
+  let [isLoading, setIsLoading] = useState(false)
   let [subject, setSubject] = useState('')
   let [email, setEmail] = useState('')
 
@@ -22,6 +23,7 @@ function Contact() {
   }, [firstName, messages, subject, email])
   let formSubmitHandler = async (e) => {
     e.preventDefault();
+    setIsLoading(true)
     axios
       .post("https://getform.io/f/8920f32d-51e2-48ea-8c49-e8038017df6b", {
         name: firstName,
@@ -35,6 +37,7 @@ function Contact() {
           setEmail('')
           setMessages('')
           setSubject('')
+          setIsLoading(false)
           setSuccess("Your message has been sent successfully.");
         } else {
           setSuccess("Some error occured, Try again later");
@@ -110,6 +113,7 @@ function Contact() {
                 className={styles.button}
                 disabled={!formIsValid}>
                 Send message</button>
+              {isLoading && <h3>Sending message...</h3>}
               <div className={styles.message}>{success ? <h3>{success}</h3> : null}</div>
             </form>
           </div>
