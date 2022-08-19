@@ -168,7 +168,7 @@
         margin: auto;
         margin-top: 0px;
         width: 95%;
-        flex-direction: column;
+        flex-direction: column-reverse
     }
 
     .contactInfo {
@@ -222,7 +222,7 @@
         margin: auto;
         margin-top: 0px;
         width: 98%;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .contactInfo {
