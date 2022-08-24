@@ -155,12 +155,12 @@
     transition: all 0.2s ease-in-out;
 }
 
-.message{
+.message {
     margin-bottom: 20px;
 }
-.svg_wrapper{
 
-}
+.svg_wrapper {}
+
 @media only screen and (max-width: 912px) {
     .test {
         margin: 20px 40px;
@@ -220,8 +220,12 @@
         font-size: 19px;
     }
 
-    .svg_wrapper svg{
-     height: 100%;
+    /* .svg_wrapper {
+        width: 100%;
+    } */
+
+    .svg_wrapper svg {
+        height: 60px;
     }
 
     .body_inner {
@@ -236,12 +240,15 @@
         padding: 5px 5px;
         margin-top: 30px;
     }
-    .checkoutBody_inner_name{
+
+    .checkoutBody_inner_name {
         flex-direction: column;
     }
-    .checkoutBody_inner_name_inner{
+
+    .checkoutBody_inner_name_inner {
         width: 100%;
     }
+
     .form {
         width: 100%;
     }
@@ -264,7 +271,7 @@
         width: 60%;
     }
 
-    .contactInfo_list{
+    .contactInfo_list {
         width: 100%;
     }
 
