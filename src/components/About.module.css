@@ -31,12 +31,12 @@
     -webkit-text-stroke: 1px white;
 }
 
-.test {
+.body_child_content {
     animation: fadeIn 2s forwards;
     margin: 20px 70px;
 }
 
-.test p {
+.body_child_content p {
     color: white;
     font-size: 30px;
     margin-bottom: 70px;
@@ -50,6 +50,7 @@
 
 .about_time h2 {
     font-size: 35px;
+    color: rgb(169, 169, 169);
 }
 
 .span a {
@@ -88,6 +89,45 @@
     margin: 50px 0px;
 }
 
+.body_child_content_languages{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0px;
+    /* flex-direction: column; */
+}
+
+.body_child_content_languages_list{
+ display: flex;
+ justify-content: space-between;
+ flex: 1;
+ max-width: 55%;
+}
+
+.body_child_content_languages_list .body_child_content_languages_list_group p{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.body_child_content_languages_title p{
+ font-size: 25px;
+}
+
+.body_child .cerfificate{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: transparent;
+    letter-spacing: 20px;
+    font-size: 12vmax;
+    -webkit-text-stroke: 1px white; 
+}
+
+.cert_wrapper{
+    width: 40%;
+}
+
+.cert_wrapper img{
+    width: 100%;
+}
+
 
 @keyframes fadeIn {
     from {
@@ -114,7 +154,7 @@
 }
 
 @media only screen and (max-width: 912px) {
-    .test {
+    .body_child_content {
         margin: 20px 40px;
     }
 
@@ -150,10 +190,40 @@
     .about_time h2 {
         font-size: 35px;
     }
+    .body_child_content_languages{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0px;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    
+    .body_child_content_languages_list{
+     display: flex;
+     flex-direction: column;
+     margin-top: -50px;
+     max-width: 100%;
+    }
+    .body_child_content_languages_list .body_child_content_languages_list_group p{
+        font-size: 23px;
+    }
+    
+    .body_child_content_languages_title p{
+     font-size: 30px;
+    }
+    /* .body_child .cerfificate{
+        text-align: center;
+         font-size: 8vmax;
+         letter-spacing: 4px;
+     } */
+     .cert_wrapper{
+        width: 90%;
+        padding: 0px;
+    }
 }
 
 @media only screen and (max-width: 540px) {
-    .test {
+    .body_child_content {
         margin: 20px 10px;
     }
 
@@ -172,11 +242,43 @@
         font-size: 13vmax;
     }
 
-    .test p {
+    .body_child_content p {
         font-size: 19px;
     }
 
     .about_time h2 {
         font-size: 19px;
+    }
+    .body_child_content_languages{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0px;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    
+    .body_child_content_languages_list{
+     display: flex;
+     flex-direction: column;
+     margin-top: -50px;
+     max-width: 100%;
+    }
+    
+    .body_child_content_languages_list .body_child_content_languages_list_group p{
+        font-size: 19px;
+        margin: 5px;
+    }
+    
+    .body_child_content_languages_title p{
+     font-size: 23px;
+    }
+    /* .body_child .cerfificate{
+       text-align: center;
+        font-size: 6vmax;
+        letter-spacing: 0px;
+    } */
+    .cert_wrapper{
+        width: 100%;
+        padding: 5px;
     }
 }

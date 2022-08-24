@@ -2,22 +2,10 @@ import React, { useState, useEffect } from 'react'
 import styles from './About.module.css'
 import NavBar from './NavBar'
 import img from '../Assets/IMG_4856.jpg'
+import certificate from '../Assets/IMG_4846.PNG'
 
 function About() {
-
     let [time, setTime] = useState([])
-    // let date = new Date();
-    // let h = date.getHours();
-    // let s = date.getSeconds()
-    // let m = date.getMinutes();
-    // h = (h < 10) ? "0" + h : h;
-    // m = (m < 10) ? "0" + m : m;
-    // let newdate = h + ':' + m + ':' + s;
-    // // setTime(newdate)
-    // useEffect(() => {
-    //     setTime(newdate)
-    // }, [newdate])
-
     useEffect(() => {
         const timer = setInterval(() => {
             let date = new Date()
@@ -43,9 +31,9 @@ function About() {
                 <div className={styles.about_imageWrapper}>
                     <img src={img} alt='Darasimi' />
                 </div>
-                <div className={styles.test}>
+                <div className={styles.body_child_content}>
                     <p>
-                        I am a young 18 year old-web developer based in Nigeria. I am currently a student studying
+                        I am a young 18 year-old web developer based in Nigeria. I am currently a student studying
                         computer science at <span className={styles.span}><a href='https://unilag.edu.ng/' target='_blank' rel="noreferrer">The University of Lagos. </a></span>
                         I picked interest in coding at a very young and vital stage of my life, When I wrote
                         just HTML and CSS before moving unto Javascript in the later future. Over the years and the past few months
@@ -66,6 +54,74 @@ function About() {
                 </div>
                 <div className={styles.body_child}>
                     <h1>MY SKILLS</h1>
+                    <div className={styles.body_child_content}>
+                        <p>I try my best day in, day out to learn new things and not just feel too
+                            comfortable with what I have learnt in the past.✌🏾
+                        </p>
+                        {/* Languages, skills and libraries */}
+                        <div className={styles.body_child_content_languages}>
+                            <div className={styles.body_child_content_languages_list}>
+                                <div className={styles.body_child_content_languages_list_group}>
+                                    <p>*HTML/CSS</p>
+                                    <p>*Javascript</p>
+                                    <p>*REACT JS</p>
+                                </div>
+                                <div className={styles.body_child_content_languages_list_group}>
+                                    <p>*VUE JS(Just started)</p>
+                                    <p>*Netlify(Hosting)</p>
+                                    <p>*Vercel(Hosting)</p>
+                                </div>
+                                <div className={styles.body_child_content_languages_list_group}>
+                                    <p>*NPM</p>
+                                    <p>*Firebase</p>
+                                    <p>*Responsive Design</p>
+                                </div>
+                                <div className={styles.body_child_content_languages_list_group}>
+                                    <p>*GIT</p>
+                                    <p>*GITHUB</p>
+                                    <p>*Contentful</p>
+                                </div>
+                            </div>
+                            <div className={styles.body_child_content_languages_title}>
+                                <div>
+                                    <p>-Languages, Skills & Libraries</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Learning */}
+                        <div className={styles.body_child_content_languages}>
+                            <div className={styles.body_child_content_languages_list}>
+                                <div className={styles.body_child_content_languages_list_group}>
+                                    <p>*UDEMY 🎥</p>
+                                    <p>*YOUTUBE 🎥</p>
+                                </div>
+                                <div className={styles.body_child_content_languages_list_group}>
+                                    <p>*W3SCHOOLS 📖 </p>
+                                    <p>*REACTJS.org 📖 </p>
+                                </div>
+                                <div className={styles.body_child_content_languages_list_group}>
+                                    <p>*TWITTER 😜</p>
+                                    <p>*CODEPEN/ CodeSandBox 🧠 </p>
+                                </div>
+                            </div>
+                            <div className={styles.body_child_content_languages_title}>
+                                <div>
+                                    <p>-Learning</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* CERTIFICATES */}
+                    <div className={styles.body_child}>
+                        <h1>CERTIF<div>ICATES</div></h1>
+                        {/* <h1 className={styles.cerfificate}>CERTIFICATE(S)</h1> */}
+                        <div className={styles.body_child_content}>
+                            <p>Here are some of my cerificates...🎖</p>
+                            <div className={styles.cert_wrapper}>
+                                <img src={certificate} alt='CERTIFICATES' />
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className={styles.skills}>
 
