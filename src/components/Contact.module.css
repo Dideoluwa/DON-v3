@@ -158,7 +158,9 @@
 .message{
     margin-bottom: 20px;
 }
+.svg_wrapper{
 
+}
 @media only screen and (max-width: 912px) {
     .test {
         margin: 20px 40px;
@@ -216,6 +218,10 @@
 
     .test p {
         font-size: 19px;
+    }
+
+    .svg_wrapper svg{
+     height: 100%;
     }
 
     .body_inner {

@@ -11,15 +11,15 @@ function Home() {
                 <div className={styles.main_child}>
                     <h1>Darasimi Oni</h1>
                     <div className={styles.para}>
-                        <p>I am {' '}
+                        <p>
                             <span style={{ display: "inline-flex" }}>
                                 <Typewriter
                                     className="color"
                                     options={{
                                         strings: [
-                                            "a Frontend Developer.",
-                                            "an Amateur Music Producer.",
-                                            "a Student."],
+                                            "A Frontend Developer.",
+                                            "An Amateur Music Producer.",
+                                            "A Student."],
                                         autoStart: true,
                                         loop: true,
                                         changeDelay: 0.01

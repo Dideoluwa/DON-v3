@@ -35,16 +35,21 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
     color: white;
+    font-weight: 700;
     margin-bottom: 60px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
     text-decoration: none;
 }
 
 .list2 h2 a:hover {
-    transition: all 0.2s ease-in-out;
-    color: rgb(184, 184, 184);
+    transition: all 0.5s ease-in-out;
+    -webkit-box-reflect: below -20px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.15));
+    color: transparent;
+    letter-spacing: 20px;
+    -webkit-text-stroke: 0.5px white;
 }
 
 .bar1 {
@@ -69,11 +74,18 @@
     }
 }
 
+
 @media only screen and (max-width: 912px) {
     .list2 h2 a {
         margin-top: 10px;
         letter-spacing: 5px;
         font-size: 25px;
         margin-bottom: 15px;
+    }
+
+    .list2 h2 a:hover {
+        letter-spacing: 10px;
+        -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2));
+
     }
 }
