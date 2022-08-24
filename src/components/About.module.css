@@ -9,6 +9,14 @@
     font-size: 35px;
 }
 
+.body_child h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: transparent;
+    letter-spacing: 20px;
+    font-size: 30vmax;
+    -webkit-text-stroke: 0.5px white;
+}
+
 .test {
     animation: fadeIn 2s forwards;
     margin: 20px 70px;
@@ -123,6 +131,14 @@
         margin: 20px 40px;
     }
 
+    .body_child h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: transparent;
+        letter-spacing: 20px;
+        font-size: 20vmax;
+        -webkit-text-stroke: 0.5px white;
+    }
+
     .emoji3 {
         opacity: 1;
         transform: translateX(0%);
@@ -143,6 +159,13 @@
 
     .body_child {
         font-size: 23px;
+    }
+    .body_child h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: transparent;
+        letter-spacing: 5px;
+        font-size: 13vmax;
+        -webkit-text-stroke: 0.5px white;
     }
 
     .test p {
