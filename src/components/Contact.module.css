@@ -220,12 +220,12 @@
         font-size: 19px;
     }
 
-    /* .svg_wrapper {
-        width: 100%;
-    } */
+    .svg_wrapper {
+        width: 20%;
+    }
 
     .svg_wrapper svg {
-        height: 60px;
+        height: 100%;
     }
 
     .body_inner {
