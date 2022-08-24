@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './About.module.css'
 import NavBar from './NavBar'
-import img from '../Assets/IMG_4856.PNG'
+import img from '../Assets/IMG_4856.jpg'
 
 function About() {
     return (
