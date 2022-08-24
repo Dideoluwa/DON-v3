@@ -10,6 +10,14 @@
     font-size: 35px;
 }
 
+.body_child h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: transparent;
+    letter-spacing: 20px;
+    font-size: 23vmax;
+    -webkit-text-stroke: 0.5px white;
+}
+
 .body_inner {
     /* margin: auto; */
     margin-top: 50px;
@@ -171,6 +179,10 @@
         width: 95%;
         flex-direction: column-reverse
     }
+    .body_child h1{
+        letter-spacing: 10px;
+        font-size: 17vmax;
+    }
 
     .contactInfo {
         width: 100%;
@@ -222,6 +234,11 @@
 
     .body_child {
         font-size: 23px;
+    }
+
+    .body_child h1{
+        letter-spacing: 5px;
+        font-size: 11vmax;
     }
 
     .test p {

@@ -132,11 +132,8 @@
     }
 
     .body_child h1{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: transparent;
-        letter-spacing: 20px;
+        letter-spacing: 10px;
         font-size: 20vmax;
-        -webkit-text-stroke: 0.5px white;
     }
 
     .emoji3 {
@@ -161,11 +158,8 @@
         font-size: 23px;
     }
     .body_child h1{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: transparent;
         letter-spacing: 5px;
         font-size: 13vmax;
-        -webkit-text-stroke: 0.5px white;
     }
 
     .test p {
