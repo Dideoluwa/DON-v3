@@ -4,11 +4,21 @@
 .body_child{
     color: white;
     margin: auto;
-    font-size: 35px;
+}
+.body_child h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: transparent;
+    letter-spacing: 20px;
+    font-size: 17vmax;
+    -webkit-text-stroke: 1px white;
 }
 @media only screen and (max-width: 912px){
     .test{
         margin: 20px 40px;
+    }
+    .body_child h1 {
+        letter-spacing: 10px;
+        font-size: 11vmax;
     }
 }
 
@@ -16,8 +26,10 @@
     .test{
         margin: 20px 10px;
     }
-    .body_child{
-        font-size: 23px;
+  
+    .body_child h1 {
+        letter-spacing: 5px;
+        font-size: 8vmax;
     }
     .test p{
         font-size: 19px;

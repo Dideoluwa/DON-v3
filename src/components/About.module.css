@@ -10,8 +10,8 @@
 }
 
 .about_imageWrapper {
+    margin-top: 12px;
     width: 85%;
-    /* padding: 12px; */
     align-self: center;
 }
 
@@ -132,10 +132,6 @@
 
     .about_imageWrapper img {
         height: 100%;
-    }
-
-    .body_child {
-        font-size: 23px;
     }
 
     .body_child h1 {
