@@ -53,6 +53,7 @@ function About() {
 
                 </div>
                 <div className={styles.body_child}>
+                    {/* SKILLS */}
                     <h1>MY SKILLS</h1>
                     <div className={styles.body_child_content}>
                         <p>I try my best day in, day out to learn new things and not just feel too
@@ -79,7 +80,7 @@ function About() {
                                 <div className={styles.body_child_content_languages_list_group}>
                                     <p>*GIT</p>
                                     <p>*GITHUB</p>
-                                    <p>*Contentful</p>
+                                    <p>*Contentful(CMS)</p>
                                 </div>
                             </div>
                             <div className={styles.body_child_content_languages_title}>
@@ -113,7 +114,7 @@ function About() {
                     </div>
                     {/* CERTIFICATES */}
                     <div className={styles.body_child}>
-                        <h1>CERTIF<div>ICATES</div></h1>
+                        <h1>CERTIF ICATES</h1>
                         {/* <h1 className={styles.cerfificate}>CERTIFICATE(S)</h1> */}
                         <div className={styles.body_child_content}>
                             <p>Here are some of my cerificates...🎖</p>
