@@ -1,0 +1,15 @@
+.body_child{
+    margin: auto;
+}
+.body{
+    display: flex;
+}
+.body_child h2{
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 540px){
+    .body_child h2{
+        font-size: 13px;
+      }
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+// import Footer from './Footer'
 import NavBar from './NavBar'
 import styles from './Portfolio.module.css'
 
@@ -11,6 +12,7 @@ function Portfolio() {
                     <h1>PORTFOLIO</h1>
                 </div>
             </div>
+            {/* <Footer /> */}
         </div>
     )
 }

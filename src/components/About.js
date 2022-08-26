@@ -3,6 +3,7 @@ import styles from './About.module.css'
 import NavBar from './NavBar'
 import img from '../Assets/IMG_4856.jpg'
 import certificate from '../Assets/IMG_4846.PNG'
+// import Footer from './Footer'
 
 function About() {
     let [time, setTime] = useState([])
@@ -128,6 +129,7 @@ function About() {
 
                 </div>
             </div>
+            {/* <Footer /> */}
         </div>
     )
 }

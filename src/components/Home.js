@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Home.module.css'
 import Typewriter from "typewriter-effect";
 import NavBar from './NavBar';
+// import Footer from './Footer';
 
 function Home() {
     return (
@@ -31,6 +32,7 @@ function Home() {
 
                 </div>
             </div>
+            {/* <Footer /> */}
         </div>
     )
 }
