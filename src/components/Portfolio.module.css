@@ -1,5 +1,9 @@
 .body{
     display: flex;
+  
+}
+.inner{
+    margin-top: 60px;
 }
 .body_child{
     color: white;
