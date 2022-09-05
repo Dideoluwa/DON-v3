@@ -1,6 +1,6 @@
-import jobify from '/Users/mac/Desktop/Darasimi files/DON-v3/src/Assets/projectImages/jobify.png'
-import news from '/Users/mac/Desktop/Darasimi files/DON-v3/src/Assets/projectImages/news-update.png'
-import emmanuel from '/Users/mac/Desktop/Darasimi files/DON-v3/src/Assets/projectImages/Emmanuel odudu.png'
+import jobify from '../Assets/projectImages/jobify.png'
+import news from '../Assets/projectImages/news-update.png'
+import emmanuel from '../Assets/projectImages/Emmanuel.png'
 const Lists = [
     {
         id: 1,
