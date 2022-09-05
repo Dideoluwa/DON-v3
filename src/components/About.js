@@ -76,7 +76,7 @@ function About() {
                                 <div className={styles.body_child_content_languages_list_group}>
                                     <p>*NPM</p>
                                     <p>*Firebase</p>
-                                    <p>*Responsive Design</p>
+                                    <p>*Redux</p>
                                 </div>
                                 <div className={styles.body_child_content_languages_list_group}>
                                     <p>*GIT</p>

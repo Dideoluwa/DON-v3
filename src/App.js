@@ -3,6 +3,7 @@ import Loader from './components/Loader';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CustomCursor from 'custom-cursor-react';
 import 'custom-cursor-react/dist/index.css';
+import NotFound from './NotFound';
 const Home = React.lazy(() => import('./components/Home'));
 const About = React.lazy(() => import('./components/About'));
 const Portfolio = React.lazy(() => import('./components/Portfolio'));
@@ -14,7 +15,7 @@ function App() {
     <BrowserRouter>
      <CustomCursor
       customClass='none'
-      dimensions={100}
+      dimensions={60}
       fill='transparent'
       strokeColor='#fff'
       strokeWidth = {2}
@@ -37,6 +38,9 @@ function App() {
         } />
         <Route path="/contact" element={<React.Suspense fallback={
           <Loader />}> <Contact /> </React.Suspense>
+        } />
+          <Route path="*" element={<React.Suspense fallback={
+          <Loader />}> <NotFound /> </React.Suspense>
         } />
       </Routes>
     </BrowserRouter>

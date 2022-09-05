@@ -1,0 +1,90 @@
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.body_child {
+    color: white;
+    margin: auto;
+}
+
+.body_child h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: transparent;
+    letter-spacing: 20px;
+    font-size: 35vmax;
+    -webkit-text-stroke: 1px white;
+    animation: blink 3s infinite;
+    transition: all 0.3s ease-in-out;
+}
+@keyframes blink {
+    0%{
+       color: rgb(139, 139, 139);
+    }
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: rgb(139, 139, 139);
+     }
+}
+.message {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message_button {
+    margin: auto;
+}
+
+.message_button button {
+    padding: 10px 30px;
+    font-size: 18px;
+    border: 0.5px solid white;
+    border-radius: 6px;
+    background-color: transparent;
+    color: white;
+    margin-top: 18px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.message_button button:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 912px) {
+    .test {
+        margin: 20px 40px;
+    }
+
+    .body_child h1 {
+        letter-spacing: 10px;
+        font-size: 35vmax;
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .test {
+        margin: 20px 10px;
+    }
+
+    .body_child h1 {
+        letter-spacing: 5px;
+        margin-top: 70px;
+        font-size: 25vmax;
+    }
+
+    .test p {
+        font-size: 19px;
+    }
+    .message h2{
+        font-size: 17px;
+    }
+    .message_button button{
+        font-size: 14px;
+    }
+}
