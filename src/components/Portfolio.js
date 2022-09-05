@@ -16,7 +16,7 @@ function Portfolio() {
                 <div className={styles.portfolio_list}>
                     {Lists.map((list) => (
                         <div className={styles.card}>
-                            <Link to={`/description/${list.id}`}>
+                            <Link to={`/project/${list.title}`}>
                                 <div key={list.id}>
                                     <div className={styles.img_wrapper}>
                                         <img src={list.img} alt={list.title} />
