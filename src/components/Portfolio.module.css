@@ -1,14 +1,17 @@
-.body{
+.body {
     display: flex;
-  
+    flex-direction: column;
 }
-.inner{
+
+.inner {
     margin-top: 60px;
 }
-.body_child{
+
+.body_child {
     color: white;
     margin: auto;
 }
+
 .body_child h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: transparent;
@@ -16,26 +19,82 @@
     font-size: 17vmax;
     -webkit-text-stroke: 1px white;
 }
-@media only screen and (max-width: 912px){
-    .test{
+
+.img_wrapper {
+    width: 100%;
+    /* background-color: red; */
+    /* margin: 30px; */
+}
+
+.img_wrapper img {
+    width: 100%;
+}
+
+.portfolio_list {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+
+.card {
+    border-radius: 8px;
+    flex: 1 0 35%;
+    padding: 0px 2px;
+    max-width: 100%;
+    margin: 30px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.card h2 {
+    margin-top: 5px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.card a .img_wrapper img{
+    border-radius: 8px;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 912px) {
+    .test {
         margin: 20px 40px;
     }
+
     .body_child h1 {
         letter-spacing: 10px;
         font-size: 11vmax;
     }
+    .card{
+        flex: 1 0 100%;
+        margin: 10px 0px;
+        padding: 8px;
+    }
 }
 
-@media only screen and (max-width: 540px){
-    .test{
+@media only screen and (max-width: 540px) {
+    .test {
         margin: 20px 10px;
     }
-  
+
     .body_child h1 {
         letter-spacing: 5px;
         font-size: 7vmax;
     }
-    .test p{
+
+    .test p {
         font-size: 19px;
+    }
+    .card h2{
+        font-size: 18px;
     }
 }
