@@ -3,7 +3,7 @@ import Loader from './components/Loader';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CustomCursor from 'custom-cursor-react';
 import 'custom-cursor-react/dist/index.css';
-// import NotFound from './NotFound';
+const ProjectsInfo = React.lazy(() => import('./components/ProjectsInfo'));
 const NotFound = React.lazy(() => import('./components/NotFound'));
 const Home = React.lazy(() => import('./components/Home'));
 const About = React.lazy(() => import('./components/About'));
@@ -14,19 +14,19 @@ const Contact = React.lazy(() => import('./components/Contact'));
 function App() {
   return (
     <BrowserRouter>
-     <CustomCursor
-      customClass='none'
-      dimensions={60}
-      fill='transparent'
-      strokeColor='#fff'
-      strokeWidth = {2}
-      smoothness={{
-        movement: 0.08,
-        scale: 0.1,
-        opacity: 0.2,
-      }}
-      targetOpacity={0.5}
-    />
+      <CustomCursor
+        customClass='none'
+        dimensions={60}
+        fill='transparent'
+        strokeColor='#fff'
+        strokeWidth={2}
+        smoothness={{
+          movement: 0.08,
+          scale: 0.1,
+          opacity: 0.2,
+        }}
+        targetOpacity={0.5}
+      />
       <Routes>
         <Route path="/" element={<React.Suspense fallback={
           <Loader />}> <Home /> </React.Suspense>
@@ -40,7 +40,10 @@ function App() {
         <Route path="/contact" element={<React.Suspense fallback={
           <Loader />}> <Contact /> </React.Suspense>
         } />
-          <Route path="*" element={<React.Suspense fallback={
+        <Route path="/project/:projectId" element={<React.Suspense fallback={
+          <Loader />}> <ProjectsInfo /> </React.Suspense>
+        } />
+        <Route path="*" element={<React.Suspense fallback={
           <Loader />}> <NotFound /> </React.Suspense>
         } />
       </Routes>
