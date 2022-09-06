@@ -22,7 +22,7 @@ function ProjectsInfo() {
             </div>
             <div className={styles.buttons}>
                 <div>
-                    <button><a href={project.url} target='_blank' rel="noreferrer">Live site</a></button>
+                    <a href={project.url} target='_blank' rel="noreferrer"><button>Live site</button></a>
                 </div>
                 <div>
                     <Link to='/portfolio'>
