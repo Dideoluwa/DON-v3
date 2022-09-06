@@ -5,6 +5,7 @@ import food from '../Assets/projectImages/food.png'
 import ticTactToe from '../Assets/projectImages/tictactoe.png'
 import donv2 from '../Assets/projectImages/Donv2.png'
 import ECommerce from '../Assets/projectImages/E-commerce.png'
+import QRcode from '../Assets/projectImages/QR-code.png'
 const Lists = [
     {
         id: 7,
@@ -33,6 +34,13 @@ const Lists = [
         description: "This is a hackathon project which I worked as the sole Frontend developer on my team.We built this application to enhance collaboration between people remotely and also assist freelancers in getting gigs and also giving out gigs.It is a very user friendly application that anybody can use.",
         img: jobify,
         url: 'https://jobifyelite22.pythonanywhere.com/'
+    },
+    {
+        id: 8,
+        title: "QR-code generator and scanner",
+        description: "A simple web application for scanning QR-codes and also generating QR-codes for url's.",
+        img: QRcode,
+        url: 'https://qr-code-generator-dideoluwa.vercel.app/'
     },
     {
         id: 2,
