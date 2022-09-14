@@ -15,9 +15,12 @@
     text-transform: uppercase;
     font-weight: 200;
     animation: shiver 1s linear .5s infinite;
+    /* animation: slideLeft 2s linear forwards; */
     color: white;
 }
-
+.main_child_title{
+    
+}
 .para {
     margin: auto;
 }
@@ -27,6 +30,22 @@
     color: white;
 }
 
+@keyframes slideLeft {
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+@keyframes slideRight {
+    from{
+      transform: translateX(50%);
+    }
+    to{
+      transform: translateX(0%);
+    }
+  }
 @keyframes shiver {
     0% {
         transform: translate(1px, 1px);

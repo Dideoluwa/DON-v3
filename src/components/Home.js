@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './Home.module.css'
 import Typewriter from "typewriter-effect";
 import NavBar from './NavBar';
-import RubberBand from 'react-reveal/RubberBand';
 // import Footer from './Footer';
 
 function Home() {
@@ -10,7 +9,7 @@ function Home() {
         <div>
             <NavBar />
             <div className={styles.main}>
-                <RubberBand>
+                {/* <RubberBand> */}
                     <div className={styles.main_child}>
                         <h1>Darasimi Oni</h1>
                         <div className={styles.para}>
@@ -33,7 +32,7 @@ function Home() {
                         </div>
 
                     </div>
-                </RubberBand>
+                {/* </RubberBand> */}
             </div>
             {/* <Footer /> */}
         </div>
