@@ -3,10 +3,17 @@ import news from '../Assets/projectImages/news-update.png'
 import emmanuel from '../Assets/projectImages/Emmanuel.png'
 import food from '../Assets/projectImages/food.png'
 import ticTactToe from '../Assets/projectImages/tictactoe.png'
-import donv2 from '../Assets/projectImages/Donv2.png'
+import schedule from '../Assets/projectImages/schedule.png'
 import ECommerce from '../Assets/projectImages/E-commerce.png'
 import QRcode from '../Assets/projectImages/QR-code.png'
 const Lists = [
+    {
+        id: 6,
+        title: "Schedule app",
+        description: "This is a fully functional fullstack application for scheduling meetings. I built the frontend with React.js and the backend with node js.",
+        img: schedule,
+        url: 'https://schedule-app-95ef6.web.app/'
+    },
     {
         id: 7,
         title: "E-commerce",
@@ -55,13 +62,6 @@ const Lists = [
         description: "A TicTacToe game created using Javascript.Not bad if you try playing this game with someone.",
         img: ticTactToe,
         url: 'https://dtictactoe.netlify.app/'
-    },
-    {
-        id: 6,
-        title: "Personal Portfolio (v1)",
-        description: "This is my first personal portfolio that includes most of the projects I have worked on. Built it with just HTML, CSS and Javascript.",
-        img: donv2,
-        url: 'https://onidideoluwa.netlify.app/'
     },
 ];
 
