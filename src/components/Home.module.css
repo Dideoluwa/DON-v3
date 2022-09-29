@@ -18,14 +18,11 @@
     /* animation: slideLeft 2s linear forwards; */
     color: white;
 }
-.main_child_title{
-    
-}
 .para {
     margin: auto;
 }
 
-.para p {
+.para span {
     font-size: 40px;
     color: white;
 }
@@ -165,7 +162,7 @@
         font-size: 50px;
     }
 
-    .para p {
+    .para span {
         font-size: 20px;
     }
 }

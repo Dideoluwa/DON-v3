@@ -13,7 +13,6 @@ function Home() {
                     <div className={styles.main_child}>
                         <h1>Darasimi Oni</h1>
                         <div className={styles.para}>
-                            <p>
                                 <span style={{ display: "inline-flex" }}>
                                     <Typewriter
                                         className="color"
@@ -28,7 +27,6 @@ function Home() {
                                         }}
                                     />
                                 </span>
-                            </p>
                         </div>
 
                     </div>
