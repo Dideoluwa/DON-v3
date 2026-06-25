@@ -16,7 +16,6 @@ yarn-error.log*
 
 # Editor directories and files
 .idea
-.vscode
 *.suo
 *.ntvs*
 *.njsproj
@@ -106,3 +105,7 @@ dist
 
 # Service worker
 sw.*
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
